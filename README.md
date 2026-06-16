@@ -1,4 +1,4 @@
 # A Portfolio Project
-...to record my mathematical thoughts every few days or so
+... to record my mathematical thoughts every few days or so !
 
 Max S
