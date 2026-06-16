@@ -1,2 +1,1 @@
-# Maths
-My Maths Website
+Maths Website
