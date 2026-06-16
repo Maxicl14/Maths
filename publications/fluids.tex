@@ -1,0 +1,153 @@
+% Used Latex: Template for Part III essays 2024/25 (12.02.2025) by Mycroft Rosca-Mead, Matt Colbrook, Jonathan Evans.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[11pt, titlepage]{article} 
+\usepackage[left=2.2cm,right=2.2cm,top=2.5cm,bottom=2.5cm]{geometry} 
+\usepackage{amsfonts,amssymb,amsthm,amsmath,amscd}
+\usepackage{enumerate}
+\usepackage{tikz}
+\newcommand{\ecn}{\author}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% ESSAY TITLE
+% Your essay title should match the title given in the essay booklet.
+% If you wish to give the essay your own subtitle, you can do this after the title page (e.g. using \section*{Subtitle Name}).
+% You do not need to use \Author and YOU SHOULD NOT INCLUDE YOUR NAME OR COLLEGE ANYWHERE IN THIS ESSAY.
+% The title page does not count towards the total page number.
+% You will be assigned an Essay Candidate Number (ECN) at the beginning of Easter Term.
+\title{Deriving liquid flow equations from conservation of mass momentum and energy, relations between these laws, and considerations}
+\ecn{Max Silin}
+
+% DATE
+%To remove the date from the front page of the final version, UNCOMMENT the line below.
+%\date{}
+
+% FONTS
+\renewcommand{\familydefault}{\sfdefault}
+% YOU MUST USE EITHER THE SANS-SERIF FONT DEFINED BY THE COMMAND ABOVE OR THE STANDARD LaTeX (computer modern) FONT THAT CAN BE OBTAINED BY COMMENTING OUT THE LINE ABOVE. YOU MUST NOT USE ANY OTHER FONT.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% A guide to using LaTeX can be found online at https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes.
+% A shorter LaTeX cheat sheet can be found at https://wch.github.io/latexsheet/.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Some latex tips:
+
+% Use this space for any special macros or packages you need.
+\usepackage{graphicx}
+\usepackage[
+% pdftitle={How to do this},
+% pdfstartview=XYZ,
+% bookmarks=true,
+colorlinks=true,
+linkcolor=blue,
+urlcolor=blue,
+citecolor=blue,
+pdftex,
+% bookmarks=true,
+linktocpage=true, % makes the page number as hyperlink in table of content
+hyperindex=true
+]{hyperref}
+\usepackage{hyperref} % for linking within the document %
+
+% use this package for easy referencing:
+\usepackage[capitalise,noabbrev]{cleveref} % e.g., \cref{amazing_theorem} will reference "`Theorem"' X without having to keep track of theorems, equations etc and typing "`Theorem"'
+\usepackage{overpic} % use this package for easy labelling of figures
+\usepackage{url} % use this package to reference urls, e.g., \url{https://www.maths.cam.ac.uk/postgrad/part-iii/prospective.html}
+\usepackage{comment} % use this package to comment things out \begin{comment} blah \end{comment}
+
+% FIGURES
+% Here is an example of how to do figures:
+
+%\begin{figure}
+%\centering
+%\includegraphics[width=\linewidth]{CMS at night_0.jpg}
+%\caption{The CMS at night.}\label{fig:cms}
+%\end{figure}
+
+% General tip: Many tex problems can be easily solved by a quick and specific google search.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%FOOTNOTES
+\newcommand\blfootnote[1]{% avoids footnotes spilling over
+  \begingroup
+  \renewcommand\thefootnote{}\footnote{#1}%
+  \addtocounter{footnote}{-1}%
+  \endgroup
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% The following relate to equations, theorems, etc, as illustarted in the document. 
+
+\numberwithin{equation}{section}
+% EQUATION NUMBERING: The command above can be changed to number equations within subsections, rather than sections, or it can be commented out to number equations through the document, irrespective of (sub)sections.
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{corollary}{Corollary}
+\newtheorem{proposition}{Proposition}
+\newtheorem{definition}{Definition}
+\theoremstyle{definition}
+\newtheorem{remark}{Remark}
+\newtheorem{example}{Example}
+
+\numberwithin{theorem}{section}
+\numberwithin{lemma}{section}
+\numberwithin{corollary}{section}
+\numberwithin{proposition}{section}
+\numberwithin{definition}{section}
+\numberwithin{remark}{section}
+% NUMBERING OF THEOREMS ETC: The commands above can be changed to number within subsections, rather than sections, or commented out to number them through the document, irrespective of (sub)sections.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\maketitle
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% START WRITING YOUR ESSAY HERE
+\tableofcontents
+\setlength{\parindent}{0pt}
+\newcommand*{\nsection}[1]{
+    \section*{#1}
+    \addcontentsline{toc}{section}{#1}
+}
+\newcommand*{\nsubsection}[1]{
+    \subsection*{#1}
+    \addcontentsline{toc}{subsection}{#1}
+}
+\newcommand*{\nsubsubsection}[1]{
+    \subsection*{#1}
+    \addcontentsline{toc}{subsubsection}{#1}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Start Writing 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%This is how you cite, use \bibitem{} 
+\cite{LABEL}
+% This is to do footnotes
+\footnote{Fotnote}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                             
+% REFERENCES
+%                                                                             
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% List any references you have used below. You can list papers in your preferred style, e.g. as below.
+% To cite a paper in your text, use \cite{}.
+
+% If you prefer, you can list your papers in a separate .bib file. This is often much more efficient and easier to change later.
+% An explanation of how to do this can be found at https://www.overleaf.com/learn/latex/Bibliography_management_with_bibtex.
+% When submitting the essay, you must upload your .bib file alongside this .tex file.
+\begin{thebibliography}{99}
+\bibitem{LABEL} WRITING TO APPEAR ON BIBLIOGRAPHY 
+\end{thebibliography}
+\end{document}
+
+
+
