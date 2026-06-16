@@ -126,11 +126,18 @@ hyperindex=true
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-
-%This is how you cite, use \bibitem{} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%This is how you cite, use \bibitem{} in bibliog first and reload once.
 \cite{LABEL}
 % This is to do footnotes
 \footnote{Fotnote}
+% Hyperrefs work like this
+\hyperref{LABEL}{TEXT IN LINK}
+\hypertarget{LABEL}{}
+% and also in figures or equations
+\label{LABEL}
+\ref{LABEL}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %                                                                             
